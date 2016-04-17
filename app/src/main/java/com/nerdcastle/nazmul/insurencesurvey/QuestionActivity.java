@@ -447,7 +447,7 @@ public class QuestionActivity extends AppCompatActivity {
                     getAnswerArray.put(answerobject);
                     //getAnswerArray.put(tokenNumber);
                     System.out.println(getAnswerArray);
-                    //Toast.makeText(getApplicationContext(), getAnswerArray.toString(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), getAnswerArray.toString(), Toast.LENGTH_LONG).show();
                     JsonArrayRequest request = new JsonArrayRequest(Request.Method.POST, "http://dotnet.nerdcastlebd.com/Insurance/api/answers", getAnswerArray, new Response.Listener<JSONArray>() {
                         @Override
                         public void onResponse(JSONArray response) {

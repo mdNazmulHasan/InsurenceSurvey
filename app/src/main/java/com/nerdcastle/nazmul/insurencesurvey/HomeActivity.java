@@ -31,7 +31,7 @@ public class HomeActivity extends AppCompatActivity {
     public void start(View view) throws JSONException {
         JSONObject id=new JSONObject();
         id.put("UserId",userId);
-        JsonObjectRequest request=new JsonObjectRequest(Request.Method.POST, "http://dotnet.nerdcastlebd.com/renew/api/users", id, new Response.Listener<JSONObject>() {
+        JsonObjectRequest request=new JsonObjectRequest(Request.Method.POST, "http://dotnet.nerdcastlebd.com/Insurance/api/users", id, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
                 try {
